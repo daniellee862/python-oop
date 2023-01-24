@@ -1,0 +1,272 @@
+{
+    "NPCs": [{
+        "name": "Alex",
+        "health": 83,
+        "inventory": ["compass", "penknife", "mushroom","map"],
+        "type": "workhorse"
+    },
+    {
+        "name": "David",
+        "health": 30,
+        "inventory": ["potted plant", "hair tie", "jar of students' tears"],
+        "type": "Joe's assistant"
+    },
+    {
+        "name": "Duncan",
+        "health": 79,
+        "inventory": ["nursery rhyme", "Jeff Bezos cut out", "bash script"],
+        "type": "risk-taker"
+    },
+    {
+        "name": "Joe",
+        "health": 100,
+        "inventory": ["calculator", "used car", "PhD certificate"],
+        "type": "big boss"
+    },
+    {
+        "name": "V",
+        "health": 90,
+        "inventory": ["puppy", "20 sided dice", "microphone"],
+        "type": "entertainer"
+    }, 
+    {
+        "name": "Cat",
+        "health": 86,
+        "inventory": ["vision board", "book of child's drawings", "yellow mac"],
+        "type": "enforcer"
+    }
+    ],
+    "Items":[
+        {
+            "name":"compass",
+            "description":"Always points South West",
+            "cost":8,
+            "broken": false
+        }, 
+        {
+            "name":"potted plant",
+            "description":"Very green, just about to flower",
+            "cost":3.50,
+            "broken": false
+        },
+        {
+            "name":"nursery rhyme",
+            "description":"Someone has spilt coffee on it",
+            "cost":2,
+            "broken":true
+        },
+        {
+            "name":"calculator",
+            "description":"Looks brand new, whoever had this obviously doesn't need it",
+            "cost":12,
+            "broken": false
+        },
+        {
+            "name":"puppy",
+            "description":"She's SO CUTE",
+            "cost":150,
+            "broken":false
+        },
+        {
+            "name":"vision board",
+            "description":"Visualise and you shall achieve",
+            "cost":15,
+            "broken": false
+        },
+        {
+            "name":"penknife",
+            "description":"It's so rusted the knife doesn't work",
+            "cost":1,
+            "broken":true
+        },
+        {
+            "name":"hair tie",
+            "description":"wait... are they diamonds?!",
+            "cost":200,
+            "broken":false
+        },
+        {
+            "name":"Jeff Bezos cut out",
+            "description":"It's missing a leg and someone has drawn a mustache on it",
+            "cost":7.99,
+            "broken": true
+        },
+        {
+            "name":"used car",
+            "description":"Hammer the dents out and a lick of paint it'll be like brand new",
+            "cost":500,
+            "broken": false
+        },
+        {
+            "name":"20 sided dice",
+            "description":"It's glowing with some kind of energy",
+            "cost":56,
+            "broken":false
+        },
+        {
+            "name":"book of child's drawings",
+            "description":"Each page is a brand new horror but it is covered in glitter",
+            "cost":23,
+            "broken": false
+        },
+        {
+            "name":"mushroom",
+            "description":"Will restore you to full health or kill you, I can't remember",
+            "cost":3.50,
+            "broken":false
+        },
+        {
+            "name":"jar of student's tears",
+            "description":"Some say this grants you enteral life. Can only be used by David",
+            "cost":null,
+            "broken":false
+        },
+        {
+            "name":"bash script",
+            "description":"It automates your decision making",
+            "cost":36,
+            "broken": false
+        },
+        {
+            "name":"PhD certificate",
+            "description":"Free entry to the secret societies",
+            "cost":192,
+            "broken": false
+        },
+        {
+            "name":"microphone",
+            "description":"Each use adds another like to your facebook post, batteries not included",
+            "cost":52,
+            "broken": true
+        },
+        {
+            "name":"yellow mac",
+            "description":"Great for rainy days and fighting off sewer clowns",
+            "cost":47,
+            "broken":false
+        },
+        {
+            "name":"leather scraps",
+            "description":"Offcuts of leather, can be used for repairs.",
+            "cost":3,
+            "broken":false
+        },
+        {
+            "name":"smiths hammer",
+            "description":"As shiny as the day it was made, lighter then you would think.",
+            "cost":70,
+            "broken":false
+        },
+        {
+            "name":"tiny silver spoon",
+            "description":"This small silver spoon is the definition of elegance, it has a tiny silver crest on the handle.",
+            "cost":482,
+            "broken":false
+        },
+        {
+            "name":"dirty tankard",
+            "description":"You have to hope thats old mead left in there.",
+            "cost":5,
+            "broken":false
+        },
+        {
+            "name":"cracked steak knife",
+            "description":"Well used with a dull edge, if used will break",
+            "cost":2,
+            "broken":false
+        },
+        {
+            "name":"right slipper",
+            "description":"You can see yourself through the hole in the sole.",
+            "cost":1,
+            "broken":true
+        },
+        {
+            "name":"lumpy pillow",
+            "description":"Comfier than you'd expect, although very discoloured",
+            "cost":7,
+            "broken":false
+        },
+        {
+            "name":"teddy bear",
+            "description":"When you look into it's soulful eyes, you can swear you hear a voice.",
+            "cost":48,
+            "broken":false
+        },
+        {
+            "name":"soap on a rope",
+            "description":"Brand new soap, very old rope.",
+            "cost":13,
+            "broken":false
+        },
+        {
+            "name":"moldy cheese sandwich",
+            "description":"Good thing cheese gets tastier with age.",
+            "cost":36,
+            "broken":false
+        },
+        {
+            "name":"bean bag",
+            "description":"A small hole has caused this bean bag to be more bag than bean.",
+            "cost":11,
+            "broken":true
+        },
+        {
+            "name":"old book",
+            "description":"Filled with diagrams and scrawled notes in the columns.",
+            "cost":98,
+            "broken":false
+        }
+    ],
+    "Locations": [
+        {
+            "name": "Old Smithy",
+            "description": "A dimly lit room with blacksmith equipment scattered everywhere. All in great condition and could be useful to fix broken items.",
+            "exits": [{"S": "Storage Room"}, {"E": "Dining Hall"}],
+            "loot": ["leather scraps", "smiths hammer"]
+        },
+        {
+            "name": "Storage Room",
+            "description": "Empty shelves and racks cover the walls, they seem to be stripped bare.",
+            "exits": [{"N": "Old Smithy"}],
+            "loot": null
+        },
+        {
+            "name": "Dining Hall",
+            "description": "Filled with long tables and benches, you get the impression that an army could eat here.",
+            "exits": [{"W": "Old Smithy"}, {"S": "Dorms"}, {"N": "Shower Block"}, {"E": "Large Double Doors"}],
+            "loot": ["tiny silver spoon", "dirty tankard", "cracked steak knife"]
+        },
+        {
+            "name": "Dorms",
+            "description": "A number of bed that have been left unmade, with one pristinely made bed in the corner",
+            "exits": [{"N": "Dining Hall"}, {"E": "Toilet"}],
+            "loot": ["lumpy pillow", "teddy bear", "right slipper"]
+        },
+        {
+            "name": "Shower Block",
+            "description": "Tiled room full of shower cubicles, one of the cubicles tiles looks out of place.",
+            "exits": [{"S": "Dining Hall"}, {"W": "Secret Room"}],
+            "loot": ["soap on a rope"]
+        },
+        {
+            "name": "Toilet",
+            "description": "You know what it is, you don't want to be here.",
+            "exits": [{"W":"Dining Hall"}],
+            "loot": null
+        },
+        {
+            "name": "Secret Room",
+            "description": "Shelves filled with books, and a pile of blankets in the corner.",
+            "exits": [{"E": "Shower Block"}],
+            "loot": ["bean bag", "old book", "moldy cheese sandwich"]
+        }, 
+        {
+            "name": "Large Double Doors",
+            "description": "These massive ornate doors can be opened to leave the building.",
+            "exits": [{"W": "Dining Hall"}],
+            "loot": null
+        }
+    ]
+}
+
